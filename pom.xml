@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.chuanwise</groupId>
+    <artifactId>xiaoming-host</artifactId>
+    <packaging>pom</packaging>
+    <version>2.6</version>
+    <modules>
+        <module>xiaoming-host-graphical</module>
+        <module>xiaoming-host-terminal</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>chuanwise-toolkit-implement</id>
+            <url>https://github.com/Chuanwise/chuanwise-toolkit</url>
+        </repository>
+        <repository>
+            <id>xiaoming-core</id>
+            <url>https://github.com/Chuanwise/xiaoming-bot</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.chuanwise</groupId>
+            <artifactId>chuanwise-toolkit-implement</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chuanwise</groupId>
+            <artifactId>xiaoming-core</artifactId>
+            <version>2.5.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.14</version>
+        </dependency>
+    </dependencies>
+</project>
