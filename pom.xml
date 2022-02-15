@@ -4,43 +4,46 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.chuanwise</groupId>
-    <artifactId>xiaoming-host</artifactId>
+    <groupId>cn.chuanwise</groupId>
+    <artifactId>XiaoMingHost</artifactId>
     <packaging>pom</packaging>
-    <version>2.6</version>
+    <version>4.8.3</version>
     <modules>
-        <module>xiaoming-host-graphical</module>
-        <module>xiaoming-host-terminal</module>
+        <module>XiaoMingHostGraphical</module>
+        <module>XiaoMingHostTerminal</module>
+        <module>XiaoMingHostGeneric</module>
     </modules>
 
     <repositories>
         <repository>
-            <id>chuanwise-toolkit-implement</id>
-            <url>https://github.com/Chuanwise/chuanwise-toolkit</url>
-        </repository>
-        <repository>
-            <id>xiaoming-core</id>
-            <url>https://github.com/Chuanwise/xiaoming-bot</url>
+            <id>chuanwise-maven</id>
+            <url>https://maven.chuanwise.cn</url>
         </repository>
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>com.chuanwise</groupId>
-            <artifactId>chuanwise-toolkit-implement</artifactId>
-            <version>1.0</version>
+            <groupId>cn.chuanwise</groupId>
+            <artifactId>WiseToolkit</artifactId>
+            <version>4.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
-            <groupId>com.chuanwise</groupId>
-            <artifactId>xiaoming-core</artifactId>
-            <version>2.5.1</version>
+            <groupId>cn.chuanwise</groupId>
+            <artifactId>XiaoMingBot</artifactId>
+            <version>4.8.3</version>
         </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.14</version>
+            <version>1.18.20</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>2.0.0-alpha5</version>
         </dependency>
     </dependencies>
 </project>
